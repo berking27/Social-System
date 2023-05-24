@@ -1,0 +1,143 @@
+package termProject
+public
+	system dataAnalyst
+		features
+			get_data: in data port;
+			db_conn : out data port;
+	end dataAnalyst;
+	
+	system dataAnalystApp
+		features
+			get_data: in data port;
+			send_data: out data port;
+	end dataAnalystApp;
+	
+	 system loadBalancer
+	 	features
+	 		send_req: out data port;
+	 		recieve_req: in data port;
+	 end loadBalancer;
+	 
+	 system ws
+	 	features
+	 		recieve_req: in data port;
+	 		db_conn: out data port;
+	 end ws;
+	 
+	 system ws1
+	 	features
+	 		recieve_req: in data port;
+	 		send_req: out data port;
+	 end ws1;
+	 
+	 system webapp1
+	 	features
+	 		recieve_req: in data port;
+	 		send_req: out data port;
+	 end webapp1;
+	 
+	 system ws2
+	 	features
+	 		recieve_req: in data port;
+	 		send_req: out data port;
+	 end ws2;
+	 
+	 system webapp2
+	 	features
+	 		recieve_req: in data port;
+	 		send_req: out data port;
+	 end webapp2;
+	 
+	 system ws3
+	 	features
+	 		recieve_req: in data port;
+	 		send_req: out data port;
+	 end ws3;
+	 
+	 system webapp3
+	 	features
+	 		recieve_req: in data port;
+	 		send_req: out data port;
+	 end webapp3;
+	 
+	 system iberKing
+	 	features
+	 		recieve_req: in data port;
+	 		
+	 		get_data: in data port;
+	 		
+	 end iberKing;
+	 
+	 system dbserver
+	 	features
+	 		db_conn : in data port;
+	 end dbserver;
+	 
+	 --Social System
+	 system implementation iberKing.Impl
+	 	subcomponents
+	 		LB : system loadBalancer;
+	 		WS : system ws;
+	 		DA : system dataAnalyst;
+	 		DB : system dbserver;
+	 	connections
+	 		conn1 : port LB.send_req -> WS.recieve_req; 
+	 		conn2 : port recieve_req -> LB.recieve_req;
+	 		conn3 : port WS.db_conn -> DB.db_conn;
+	 		conn4 : port get_data -> DA.get_data;
+	 		conn6 : port DA.db_conn -> DB.db_conn;
+	 		--We thought dc_conn is double sided.
+	 		 
+	 end iberKing.Impl;
+	 
+	 --Data Analyst WebServer Part
+	system implementation dataAnalyst.Impl
+		subcomponents
+			dAPP : system dataAnalystApp;
+		connections
+			conn1 : port get_data -> dAPP.get_data; 
+			conn2 : port dAPP.send_data -> db_conn;
+			
+	end DataAnalyst.Impl;
+	 
+	 --Web Server Part
+	 system implementation ws.Impl
+	 	subcomponents
+	 		WS3 : system ws3;
+	 		WS2 : system ws2;
+	 		WS1 : system ws1;
+	 	connections
+	 		conn1 : port recieve_req -> WS1.recieve_req;
+	 		conn2 : port recieve_req -> WS2.recieve_req;
+	 		conn3 : port recieve_req -> WS3.recieve_req;
+	 		conn4 : port WS1.send_req -> db_conn;
+	 		conn5 : port WS2.send_req -> db_conn;
+	 		conn6 : port WS3.send_req -> db_conn;
+	 end ws.Impl;
+	 
+	 --web application part
+	 system implementation ws1.Impl
+	 	subcomponents
+	 		WA1 : system webapp1;
+	 	connections
+	 		conn1 : port recieve_req -> WA1.recieve_req;
+	 		conn2 : port WA1.send_req -> send_req;
+	 end ws1.Impl;
+	 --web application part
+	 system implementation ws2.Impl
+	 	subcomponents
+	 		WA2 : system webapp2;
+	 	connections
+	 		conn1 : port recieve_req -> WA2.recieve_req;
+	 		conn2 : port WA2.send_req -> send_req;
+	 end ws2.Impl;
+	 --web application part
+	  system implementation ws3.Impl
+	 	subcomponents
+	 		WA3 : system webapp3;
+	 	connections
+	 		conn1 : port recieve_req -> WA3.recieve_req;
+	 		conn2 : port WA3.send_req -> send_req;
+	 end ws3.Impl;
+	 	 
+end termProject;

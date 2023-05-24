@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="ASCII"?>
+<diagram:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:diagram="http://osate.org/diagram" formatVersion="7">
+  <element uuid="ddd9db45-c210-4377-81bb-318d32373b0d" manual="true">
+    <element uuid="f50633a4-8025-4da0-b0f3-11190ca5e4ff" manual="true">
+      <element uuid="4e6785c0-762e-475f-aa05-b89bd869d572" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>conn1</seg>
+      </bo>
+    </element>
+    <element uuid="5f7bd6c6-b92d-44a0-97b5-43bcf37c19e9" manual="true">
+      <element uuid="6a2b116e-d6a9-4298-ab4e-5386dcd7eec7" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>conn2</seg>
+      </bo>
+    </element>
+    <element uuid="7dd31ad5-e34f-4d79-b988-f101cd6f9bdf" manual="true" dockArea="right">
+      <bo>
+        <seg>feature</seg>
+        <seg>db_conn</seg>
+      </bo>
+      <position x="509.44525146484375" y="48.0"/>
+    </element>
+    <element uuid="d49cb4d5-3632-4e94-9cd9-e75ebf4b5e3f" manual="true" dockArea="left">
+      <bo>
+        <seg>feature</seg>
+        <seg>get_data</seg>
+      </bo>
+      <position y="48.0"/>
+    </element>
+    <element uuid="2b555911-47a8-47c6-8484-98ad79ad1d0b" manual="true">
+      <element uuid="56f6ae98-704b-49b4-8c89-78f9cf07d61f" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>get_data</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <element uuid="4bca8215-60e0-4ae8-b6a3-9aff3bc01f7d" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>send_data</seg>
+        </bo>
+        <position x="165.5624885559082" y="10.0"/>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>dAPP</seg>
+      </bo>
+      <position x="193.70310592651367" y="38.0"/>
+      <size width="239.84112548828125" height="60.0"/>
+    </element>
+    <bo>
+      <seg>classifier</seg>
+      <seg>dataAnalyst.Impl</seg>
+    </bo>
+    <position/>
+    <size width="572.6041030883789" height="110.0"/>
+  </element>
+  <config type="structure" connectionPrimaryLabelsVisible="false">
+    <enabledAadlProperties/>
+    <context>
+      <seg>classifier</seg>
+      <seg>termProject::dataAnalyst.Impl</seg>
+    </context>
+  </config>
+</diagram:Diagram>

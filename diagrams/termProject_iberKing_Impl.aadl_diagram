@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="ASCII"?>
+<diagram:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:diagram="http://osate.org/diagram" formatVersion="7">
+  <element uuid="4002b962-1a00-48bd-b0b4-76dac93b6be6" manual="true">
+    <element uuid="86f773dd-46a1-42fb-97f2-642208537021" manual="true">
+      <element uuid="bd10012c-5d5a-48ec-a30e-785166426979" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>conn1</seg>
+      </bo>
+    </element>
+    <element uuid="4478a6f9-6804-4a16-8347-e7eb0d6df43e" manual="true">
+      <element uuid="26cebcf9-bc6b-446e-8f8e-832c70e4c2d6" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>conn2</seg>
+      </bo>
+    </element>
+    <element uuid="0346aedf-fb2c-42c2-8603-17f033cc1239" manual="true">
+      <element uuid="f84a6e5c-9a72-4185-9358-4cfc4a33688a" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>conn3</seg>
+      </bo>
+    </element>
+    <element uuid="3a5f0c63-887c-4c93-bc5f-b91b1af15817" manual="true">
+      <element uuid="ac2df34d-0025-4c02-bf34-cc3f99e91db2" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>conn4</seg>
+      </bo>
+    </element>
+    <element uuid="3dc70c0e-cf9d-437f-9e6a-37fd741ff672" manual="true">
+      <element uuid="fc21c913-9630-488f-a706-76b14526dabf" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>conn6</seg>
+      </bo>
+      <bendpoints>
+        <point x="755.83984375" y="160.0"/>
+        <point x="755.83984375" y="80.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="27ffe7d7-b787-4a2a-97aa-91f8037938ca" manual="true" dockArea="left">
+      <bo>
+        <seg>feature</seg>
+        <seg>get_data</seg>
+      </bo>
+      <position y="128.0"/>
+    </element>
+    <element uuid="14884e3b-e79c-43be-9705-0bc14389bc2a" manual="true" dockArea="left">
+      <bo>
+        <seg>feature</seg>
+        <seg>recieve_req</seg>
+      </bo>
+      <position y="48.0"/>
+    </element>
+    <element uuid="1291d132-f56d-48f3-bbef-5ef05815db52" manual="true">
+      <element uuid="f7210061-b0af-4182-b147-a4852d16fed9" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>db_conn</seg>
+        </bo>
+        <position x="140.35415649414062" y="10.0"/>
+      </element>
+      <element uuid="35f17f69-29ef-495f-b2cd-1651b404b5ee" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>get_data</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>DA</seg>
+      </bo>
+      <position x="523.0820465087891" y="118.0"/>
+      <size width="203.51300811767578" height="60.0"/>
+    </element>
+    <element uuid="51f47cf2-9869-4c6a-948e-27f205dffe17" manual="true">
+      <element uuid="561eb780-4a4a-4cc0-9cf3-46d4128e169e" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>db_conn</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>DB</seg>
+      </bo>
+      <position x="765.83984375" y="38.0"/>
+      <size width="202.0286407470703" height="60.0"/>
+    </element>
+    <element uuid="37648a3b-fa9a-405e-b73b-d1ef0e45b32a" manual="true">
+      <element uuid="a12e095f-ebc5-4fb6-8457-b02ea000e9ee" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>recieve_req</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <element uuid="84fb054b-b992-48ba-96ae-b613cc2b1208" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>send_req</seg>
+        </bo>
+        <position x="169.23437881469727" y="10.0"/>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>LB</seg>
+      </bo>
+      <position x="247.00390625" y="38.0"/>
+      <size width="236.83333206176758" height="60.0"/>
+    </element>
+    <element uuid="cc63465d-5277-4a15-ad33-74e8e5e02086" manual="true">
+      <element uuid="55ff9916-79b9-4399-a9be-fd346ba1eefd" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>db_conn</seg>
+        </bo>
+        <position x="178.84375" y="10.0"/>
+      </element>
+      <element uuid="5d718a0f-9d47-410d-a4e9-e800ef9b48fe" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>recieve_req</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>WS</seg>
+      </bo>
+      <position x="503.8372497558594" y="38.0"/>
+      <size width="242.00260162353516" height="60.0"/>
+    </element>
+    <bo>
+      <seg>classifier</seg>
+      <seg>iberKing.Impl</seg>
+    </bo>
+    <position/>
+    <size width="1155.8150787353516" height="190.0"/>
+  </element>
+  <config type="structure" connectionPrimaryLabelsVisible="false">
+    <enabledAadlProperties/>
+    <context>
+      <seg>classifier</seg>
+      <seg>termProject::iberKing.Impl</seg>
+    </context>
+  </config>
+</diagram:Diagram>

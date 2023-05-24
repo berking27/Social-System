@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="ASCII"?>
+<diagram:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:diagram="http://osate.org/diagram" formatVersion="7">
+  <element uuid="af1d3e18-cbb3-41b3-b056-acf02869e3ad" manual="true">
+    <element uuid="4757891d-9387-4a71-ab79-627f7da42d9c" manual="true">
+      <element uuid="a9cbba9a-1c3b-40df-9168-94e9ac2a4c63" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>conn1</seg>
+      </bo>
+    </element>
+    <element uuid="163dbbe3-0ba1-4375-889c-c5d29eca439e" manual="true">
+      <element uuid="247a90e9-55e0-4c28-aa8d-004319b218c7" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>conn2</seg>
+      </bo>
+    </element>
+    <element uuid="dfefb954-4dda-4627-beb8-7a886c6ba5eb" manual="true" dockArea="left">
+      <bo>
+        <seg>feature</seg>
+        <seg>recieve_req</seg>
+      </bo>
+      <position y="48.0"/>
+    </element>
+    <element uuid="7054cd16-0733-4b22-87f3-76463a0bc883" manual="true" dockArea="right">
+      <bo>
+        <seg>feature</seg>
+        <seg>send_req</seg>
+      </bo>
+      <position x="590.0898284912109" y="48.0"/>
+    </element>
+    <element uuid="11675c28-4af5-4b1b-9003-eda9e49731c0" manual="true">
+      <element uuid="3fb95f0c-504a-4e5d-bb47-e67394f1ebfc" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>recieve_req</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <element uuid="009d1a2e-d0dc-4442-a615-79df64aca4c5" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>send_req</seg>
+        </bo>
+        <position x="181.81901168823242" y="10.0"/>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>WA1</seg>
+      </bo>
+      <position x="247.00390625" y="38.0"/>
+      <size width="249.41796493530273" height="60.0"/>
+    </element>
+    <bo>
+      <seg>classifier</seg>
+      <seg>ws1.Impl</seg>
+    </bo>
+    <position/>
+    <size width="657.6887817382812" height="110.0"/>
+  </element>
+  <config type="structure" connectionPrimaryLabelsVisible="false">
+    <enabledAadlProperties/>
+    <context>
+      <seg>classifier</seg>
+      <seg>termProject::ws1.Impl</seg>
+    </context>
+  </config>
+</diagram:Diagram>

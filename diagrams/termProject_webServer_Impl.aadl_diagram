@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="ASCII"?>
+<diagram:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:diagram="http://osate.org/diagram" formatVersion="7">
+  <element uuid="c5651159-2af5-4528-b612-27a4e531223a" manual="true">
+    <element uuid="e098bea8-5ac5-4d36-86b1-25b8ce90dd53" manual="true">
+      <element uuid="944700b7-fb3e-49cc-a71e-1e5b3fe2a2d7" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>conn1</seg>
+      </bo>
+      <bendpoints>
+        <point x="257.00390625" y="80.0"/>
+        <point x="257.00390625" y="240.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="96ff4ef7-d58a-4026-bccc-e91d661a1648" manual="true">
+      <element uuid="c752dee6-23cd-460a-8298-2bea7df7e1dc" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>conn2</seg>
+      </bo>
+      <bendpoints>
+        <point x="257.00390625" y="80.0"/>
+        <point x="257.00390625" y="160.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="f2ff38b3-0b9f-482a-add0-b7fbc2b5d673" manual="true">
+      <element uuid="c9f8953d-b470-45cb-a4a7-927655cef304" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>conn3</seg>
+      </bo>
+    </element>
+    <element uuid="f64a7f23-5ea7-4d0c-99ee-e6f38ab04dee" manual="true">
+      <element uuid="f81af2d7-13bb-4582-bd61-17b1cc63f646" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>conn4</seg>
+      </bo>
+      <bendpoints>
+        <point x="526.421875" y="240.0"/>
+        <point x="526.421875" y="160.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="02c1bc85-1a64-4660-a7b1-ffc0ce70776e" manual="true">
+      <element uuid="d1519f5a-a87b-4040-8ed5-3be42ed44287" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>conn5</seg>
+      </bo>
+    </element>
+    <element uuid="bf233551-b7ba-4f94-bb3b-d96097e47fb4" manual="true">
+      <element uuid="a3d26bb5-e4a0-4f32-ae73-c2cc8c53132f" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>conn6</seg>
+      </bo>
+      <bendpoints>
+        <point x="526.421875" y="80.0"/>
+        <point x="526.421875" y="160.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="6ce94666-99fe-4b6f-8533-a92d16fb636f" manual="true" dockArea="right">
+      <bo>
+        <seg>feature</seg>
+        <seg>db_conn</seg>
+      </bo>
+      <position x="630.0898361206055" y="128.0"/>
+    </element>
+    <element uuid="1f923f7c-dac1-4e69-99c5-54adab649314" manual="true" dockArea="left">
+      <bo>
+        <seg>feature</seg>
+        <seg>recieve_req</seg>
+      </bo>
+      <position y="48.0"/>
+    </element>
+    <element uuid="a759f4aa-4902-4b84-b4b1-4e08969f3b2d" manual="true">
+      <element uuid="05df409f-9b94-4d49-b2cc-a4e67e7aee7c" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>recieve_req</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <element uuid="156ff902-394c-4663-ae1e-ecf51014de6c" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>send_req</seg>
+        </bo>
+        <position x="181.81901168823242" y="10.0"/>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>WS1</seg>
+      </bo>
+      <position x="267.00390625" y="198.0"/>
+      <size width="249.41796493530273" height="60.0"/>
+    </element>
+    <element uuid="a7d83a82-3f5c-4664-8df9-b12210b94967" manual="true">
+      <element uuid="e95837d4-0042-4f57-bd0e-3bb5e2b4d3a7" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>recieve_req</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <element uuid="5ca29737-434d-4bd4-88aa-441476a7f077" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>send_req</seg>
+        </bo>
+        <position x="181.81901168823242" y="10.0"/>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>WS2</seg>
+      </bo>
+      <position x="267.00390625" y="118.0"/>
+      <size width="249.41796493530273" height="60.0"/>
+    </element>
+    <element uuid="0d96ecb8-9b48-4a01-9e2f-b749265ee043" manual="true">
+      <element uuid="458bd277-f439-421b-bc53-2a886059895a" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>recieve_req</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <element uuid="86cf3015-6603-4df2-a6bc-1b70567ca9ee" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>send_req</seg>
+        </bo>
+        <position x="181.81901168823242" y="10.0"/>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>WS3</seg>
+      </bo>
+      <position x="267.00390625" y="38.0"/>
+      <size width="249.41796493530273" height="60.0"/>
+    </element>
+    <bo>
+      <seg>classifier</seg>
+      <seg>ws.Impl</seg>
+    </bo>
+    <position/>
+    <size width="693.2486877441406" height="270.0"/>
+  </element>
+  <config type="structure" connectionPrimaryLabelsVisible="false">
+    <enabledAadlProperties/>
+    <context>
+      <seg>classifier</seg>
+      <seg>termProject::ws.Impl</seg>
+    </context>
+  </config>
+</diagram:Diagram>
