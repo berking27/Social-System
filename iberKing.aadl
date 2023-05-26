@@ -68,18 +68,41 @@ public
 	 		
 	 end iberKing;
 	 
-	 system dbserver
+	 system db_server
 	 	features
-	 		db_conn : in data port;
-	 end dbserver;
+	 		db_conn: in data port;
+	 end db_server;
 	 
-	 --Social System
+	 system slaveDB
+	 	features
+	 		db_sync : out data port;
+	 		db_conn_read1 : in data port;
+	 end slaveDB;
+	 
+	 system slaveDB1
+	 	features
+	 		db_conn_read1 : in data port;
+	 		db_conn_read2 : out data port;
+	 end slaveDB1;
+	 
+	 system slaveDB2
+	 	features
+	 		db_conn_read2 : in data port;
+	 end slaveDB2;
+	 
+	 system masterDB
+	 	features
+	 		db_sync : in data port;
+	 		db_conn : in data port;
+	 end masterDB;
+	 	 
+	 --Social System ++
 	 system implementation iberKing.Impl
 	 	subcomponents
 	 		LB : system loadBalancer;
 	 		WS : system ws;
 	 		DA : system dataAnalyst;
-	 		DB : system dbserver;
+	 		DB : system db_server;
 	 	connections
 	 		conn1 : port LB.send_req -> WS.recieve_req; 
 	 		conn2 : port recieve_req -> LB.recieve_req;
@@ -90,7 +113,7 @@ public
 	 		 
 	 end iberKing.Impl;
 	 
-	 --Data Analyst WebServer Part
+	 --Data Analyst WebServer Part ++
 	system implementation dataAnalyst.Impl
 		subcomponents
 			dAPP : system dataAnalystApp;
@@ -100,7 +123,7 @@ public
 			
 	end DataAnalyst.Impl;
 	 
-	 --Web Server Part
+	 --Web Server Part++
 	 system implementation ws.Impl
 	 	subcomponents
 	 		WS3 : system ws3;
@@ -115,7 +138,7 @@ public
 	 		conn6 : port WS3.send_req -> db_conn;
 	 end ws.Impl;
 	 
-	 --web application part
+	 --web application part++
 	 system implementation ws1.Impl
 	 	subcomponents
 	 		WA1 : system webapp1;
@@ -123,7 +146,7 @@ public
 	 		conn1 : port recieve_req -> WA1.recieve_req;
 	 		conn2 : port WA1.send_req -> send_req;
 	 end ws1.Impl;
-	 --web application part
+	 --web application part++
 	 system implementation ws2.Impl
 	 	subcomponents
 	 		WA2 : system webapp2;
@@ -131,7 +154,7 @@ public
 	 		conn1 : port recieve_req -> WA2.recieve_req;
 	 		conn2 : port WA2.send_req -> send_req;
 	 end ws2.Impl;
-	 --web application part
+	 --web application part++
 	  system implementation ws3.Impl
 	 	subcomponents
 	 		WA3 : system webapp3;
@@ -139,5 +162,24 @@ public
 	 		conn1 : port recieve_req -> WA3.recieve_req;
 	 		conn2 : port WA3.send_req -> send_req;
 	 end ws3.Impl;
-	 	 
+	 
+	 system implementation db_server.Impl
+	 	subcomponents
+	 		SDB : system slaveDB;
+	 		MDB : system masterDB;
+	 	connections
+	 		conn1 : port db_conn -> SDB.db_conn_read1;
+	 		conn2 : port db_conn -> MDB.db_conn;
+	 		conn3 : port SDB.db_sync -> MDB.db_sync;
+	 end db_server.Impl;
+
+	system implementation slaveDB.Impl
+		subcomponents
+			SDB1 : system slaveDB1;
+			SDB2 : system slaveDB2;
+		connections
+			conn1 : port db_conn_read1 -> SDB1.db_conn_read1;
+			conn2 : port SDB1.db_conn_read2 -> SDB2.db_conn_read2;
+			
+	end slaveDB.Impl;
 end termProject;

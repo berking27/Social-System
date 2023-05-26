@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="ASCII"?>
+<diagram:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:diagram="http://osate.org/diagram" formatVersion="7">
+  <element uuid="df2f509e-2cec-4104-b61e-dd58f90b10fb" manual="true">
+    <element uuid="b77a90dd-699f-448d-a583-6fd6fd7a930e" manual="true">
+      <element uuid="e44b59b9-5bfe-499e-af91-cd9775d642b4" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>conn1</seg>
+      </bo>
+    </element>
+    <element uuid="bec9df09-8a41-4cb1-a294-a5251bf3a4da" manual="true">
+      <element uuid="2fb188b9-aa45-4266-ba8b-c2a81a33fcec" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>conn2</seg>
+      </bo>
+    </element>
+    <element uuid="93864317-821c-4544-9ff3-8b3a8c9c2892" manual="true" dockArea="left">
+      <bo>
+        <seg>feature</seg>
+        <seg>db_conn_read1</seg>
+      </bo>
+      <position y="48.0"/>
+    </element>
+    <element uuid="138ce2cd-c2ef-4da3-b2cc-079a57729da9" manual="true" dockArea="right">
+      <bo>
+        <seg>feature</seg>
+        <seg>db_sync</seg>
+      </bo>
+      <position x="1075.445327758789" y="38.0"/>
+    </element>
+    <element uuid="dee057dd-1ddb-4603-a410-00bbac2ec874" manual="true">
+      <element uuid="9ff00631-7285-4b51-8860-6b451d777a21" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>db_conn_read1</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <element uuid="650941ef-ee96-40ec-8fe6-0669a8d935d7" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>db_conn_read2</seg>
+        </bo>
+        <position x="196.69531631469727" y="10.0"/>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>SDB1</seg>
+      </bo>
+      <position x="316.0273666381836" y="38.0"/>
+      <size width="301.3711051940918" height="60.0"/>
+    </element>
+    <element uuid="54856f64-46fc-478a-8e99-1dbfe456bf8f" manual="true">
+      <element uuid="750264ed-fa8e-4fb0-8020-7bff254168f3" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>db_conn_read2</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>SDB2</seg>
+      </bo>
+      <position x="637.3984451293945" y="38.0"/>
+      <size width="301.3711051940918" height="60.0"/>
+    </element>
+    <bo>
+      <seg>classifier</seg>
+      <seg>slaveDB.Impl</seg>
+    </bo>
+    <position/>
+    <size width="1137.1067848205566" height="110.0"/>
+  </element>
+  <config type="structure" connectionPrimaryLabelsVisible="false">
+    <enabledAadlProperties/>
+    <context>
+      <seg>classifier</seg>
+      <seg>termProject::slaveDB.Impl</seg>
+    </context>
+  </config>
+</diagram:Diagram>

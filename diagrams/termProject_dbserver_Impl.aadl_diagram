@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="ASCII"?>
+<diagram:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:diagram="http://osate.org/diagram" formatVersion="7">
+  <element uuid="445387e1-a7e3-41c7-aa43-0aa589ba547c" manual="true">
+    <element uuid="1ad53fcc-f671-45dd-9f70-35aa30f1568e" manual="true" dockArea="left">
+      <bo>
+        <seg>feature</seg>
+        <seg>db_conn</seg>
+      </bo>
+      <position y="125.0"/>
+    </element>
+    <element uuid="3decf593-e1fa-4e93-8e90-c0d11c6c54f3" manual="true">
+      <element uuid="3ff1a40c-380b-4e0f-ba4d-3da354fdcaad" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>db_conn</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <element uuid="a7080d40-9e6a-4eca-b300-24e839798158" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>db_sync</seg>
+        </bo>
+        <position y="60.0"/>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>MDB</seg>
+      </bo>
+      <position x="75.15885162353516" y="38.0"/>
+      <size width="213.1354103088379" height="110.0"/>
+    </element>
+    <element uuid="71aa820a-1bf5-4e88-ab74-0c2ffc594d21" manual="true">
+      <element uuid="32a6a5f6-054c-4b5c-9b2e-a2310021858e" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>db_conn_read1</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <element uuid="f793f074-e99b-4c1a-a8b0-eaca88be5054" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>db_sync</seg>
+        </bo>
+        <position y="60.0"/>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>SlvDB</seg>
+      </bo>
+      <position x="75.15885162353516" y="168.0"/>
+      <size width="303.5846481323242" height="110.0"/>
+    </element>
+    <bo>
+      <seg>classifier</seg>
+      <seg>dbserver.Impl</seg>
+    </bo>
+    <position/>
+    <size width="453.90235900878906" height="290.0"/>
+  </element>
+  <config type="structure" connectionPrimaryLabelsVisible="false">
+    <enabledAadlProperties/>
+    <context>
+      <seg>classifier</seg>
+      <seg>termProject::dbserver.Impl</seg>
+    </context>
+  </config>
+</diagram:Diagram>

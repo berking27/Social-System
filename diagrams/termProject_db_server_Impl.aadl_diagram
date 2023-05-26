@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="ASCII"?>
+<diagram:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:diagram="http://osate.org/diagram" formatVersion="7">
+  <element uuid="ae782c57-3e2d-4a96-8942-69c29d800391" manual="true">
+    <element uuid="290f30f3-f5da-4671-b118-4efa6b5a519c" manual="true">
+      <element uuid="22d3d597-7032-4c3d-8304-aca8a648c9f5" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>conn1</seg>
+      </bo>
+    </element>
+    <element uuid="b777bd7f-d103-42bb-b44c-46bb23ea8f03" manual="true">
+      <element uuid="f390819b-5123-4b29-88df-3af5a17a825f" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>conn2</seg>
+      </bo>
+      <bendpoints>
+        <point x="201.4765625" y="130.0"/>
+        <point x="201.4765625" y="77.0"/>
+        <point x="515.4323120117188" y="77.0"/>
+        <point x="515.4323120117188" y="80.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="6fabbfe8-1b92-4ae3-8e96-dbeea3f15134" manual="true">
+      <element uuid="63872050-919c-416a-b0e9-df036ee949eb" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>conn3</seg>
+      </bo>
+    </element>
+    <element uuid="61e02686-2747-49f5-852c-cd3e67c03e58" manual="true" dockArea="left">
+      <bo>
+        <seg>feature</seg>
+        <seg>db_conn</seg>
+      </bo>
+      <position y="98.0"/>
+    </element>
+    <element uuid="61a50f90-cf48-4e05-b9aa-85ecdc973cae" manual="true">
+      <element uuid="de063e53-4e7a-41c8-ad22-b5b605468b5c" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>db_conn</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <element uuid="788c0ba7-731d-4c36-9d5b-f8ffd1c8de27" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>db_sync</seg>
+        </bo>
+        <position y="60.0"/>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>MDB</seg>
+      </bo>
+      <position x="525.4322891235352" y="38.0"/>
+      <size width="213.1354103088379" height="110.0"/>
+    </element>
+    <element uuid="9b0192ba-84a7-4b27-b293-bdf738ee0728" manual="true">
+      <element uuid="e0e0b87b-7fe5-46d0-865d-1bf4a5ef293c" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>db_conn_read1</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <element uuid="90b68839-6768-4348-bf21-2d6478235a5e" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>db_sync</seg>
+        </bo>
+        <position x="232.29428482055664" y="10.0"/>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>SDB</seg>
+      </bo>
+      <position x="211.47655487060547" y="88.0"/>
+      <size width="293.9557418823242" height="60.0"/>
+    </element>
+    <bo>
+      <seg>classifier</seg>
+      <seg>db_server.Impl</seg>
+    </bo>
+    <position/>
+    <size width="813.7265777587891" height="160.0"/>
+  </element>
+  <config type="structure" connectionPrimaryLabelsVisible="false">
+    <enabledAadlProperties/>
+    <context>
+      <seg>classifier</seg>
+      <seg>termProject::db_server.Impl</seg>
+    </context>
+  </config>
+</diagram:Diagram>
